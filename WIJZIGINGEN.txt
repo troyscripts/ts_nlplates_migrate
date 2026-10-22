@@ -1,0 +1,11 @@
+Script: 1.0.0 -> 1.0.1. Nieuwe configversie: 1.0.0.
+
+Verwijder README_GITHUB.md uit je bestaande repository: dit was de handleiding
+van een oude bundel. De zelfstandige instructies staan nu in README.md.
+Neem alle bestanden en de map tests uit dit pakket over naar de repository-root.
+
+Validatie: Lua 5.4 syntaxcontrole en gesimuleerde migratietests geslaagd.
+Geen echte database gewijzigd. Test eerst op een databasekopie.
+
+Tests uitvoeren vanuit de bovenliggende map (Python 3 + liblua5.4.so.0):
+python ts_nlplates_migrate/tests/run_lua.py ts_nlplates_migrate/tests/migration.lua
